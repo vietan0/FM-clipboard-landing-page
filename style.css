@@ -21,6 +21,7 @@
 	--grey-40: hsl(210, 10%, 40%);
 	--grey-60: hsl(201, 11%, 66%);
 	--grey-90: hsl(201, 11%, 90%);
+	--grey-95: hsl(201, 11%, 95%);
 
 	color: var(--grey-30);
 }
@@ -125,7 +126,7 @@ main {
 }
 
 main {
-	background: url(images/bg-header-mobile.png) no-repeat top;
+	background: url(images/bg-header-desktop.png) no-repeat top;
 	background-size: 100%;
 }
 
@@ -259,7 +260,7 @@ li {
 }
 
 footer {
-	background-color: var(--grey-90);
+	background-color: var(--grey-95);
 	padding: 2rem clamp(2rem, 20%, 80px);
 	display: flex;
 	flex-wrap: wrap;
@@ -304,6 +305,11 @@ footer {
 }
 
 @media (max-width: 705px) {
+	main {
+		background: url(images/bg-header-mobile.png) no-repeat top;
+		background-size: 100%;
+	}
+
 	.footer-links {
 		text-align: center;
 	}
@@ -313,7 +319,6 @@ footer {
 	.footer-left {
 		justify-content: center;
 	}
-
 }
 
 @media (min-width: 1300px) {
